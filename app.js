@@ -71,6 +71,7 @@ app.post('/', upload.single('file'), (req, res) => {
     rl.on('close', () => {
       console.log('File processed successfully');
       res.status(200).send('Data inserted successfully');
+      console.log('File processed successfully');
     });
   } catch (error) {
     console.error('Error processing file:', error);
